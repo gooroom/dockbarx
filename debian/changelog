@@ -1,0 +1,5 @@
+dockbarx (0.92-1~gooroom) gooroom-1.0; urgency=medium
+ 
+  * Packaged for use in the Gooroom OS
+
+ -- gooroom <gooroom@gooroom.kr>  Thu, Oct 2017 16:51:21 +0900

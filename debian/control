@@ -1,0 +1,35 @@
+Source: dockbarx
+Section: gnome
+Priority: extra
+Maintainer: gooroom <gooroom@gooroom.kr>
+Build-Depends: cdbs (>= 0.4.49), debhelper (>= 7), dh-python, python
+X-Python-Version: >= 2.6
+Standards-Version: 3.9.7
+Homepage: https://github.com/M7S/dockbarx
+
+Package: dockbarx
+Architecture: all
+Depends:  ${misc:Depends}, dockbarx-dockx
+Recommends: gnomepanel-applet-dockbarx
+Description: DockBarX, an icon-based taskbar
+ TaskBar with groupping and group manipulation.
+ Experimental version.
+
+Package: dockbarx-common
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-wnck, python-keybinder, python-numpy, python-xlib, python-gconf, python-pil, zeitgeist, python-zeitgeist
+Recommends: zeitgeist (>= 0.4), dockmanager, dockmanager-daemon, libdesktop-agnostic-cfg-gconf, libdesktop-agnostic-vfs-gio
+Conflicts: dockbarx (<< 0.90.2), dockbarx-themes-extra (<< 2.0)
+Replaces: dockbarx (<< 0.90.2), dockbarx-themes-extra (<< 2.0)
+Description: DockBarX common files
+ This package contains the DockBarX common files
+
+Package: dockbarx-dockx
+Architecture: all
+Depends: ${misc:Depends}, dockbarx-common
+Conflicts: dockbarx (<< 0.90.2), gnome-dockbar-applet-launchers, gnome-dockbarx-applet (<= 0.21.5-0)
+Replaces: dockbarx (<< 0.90.2), gnome-dockbar-applet-launchers, gnome-dockbarx-applet (<= 0.21.5-0)
+Recommends: dockbarx-applet-volume-control, dockbarx-applet-namebar, dockbarx-applet-hello-world, dockbarx-applet-clock, dockbarx-applet-cardapio, dockbarx-applet-appindicator, dockbarx-applet-battery-status
+Description: The stand-alone DockBarX dock called DockX
+ The stand-alone DockX package
+

@@ -1,0 +1,25 @@
+This package was debianized by Scott Barnes <reeve@reeve.homelinux.org> on
+Thu, 10 Oct 2017 16:44:02 -0900. Modified by gooroom <gooroom@gooroom.kr>.
+
+It was downloaded from:
+
+    https://github.com/M7S/dockbarx
+
+Upstream Author(s):
+
+    Matias Särs (M7S)
+
+Copyright:
+
+    Copyright (C) 2009-2016 Matias Särs (M7S)
+
+License:
+
+    This software is licensed under the GPL v.3
+
+The Debian packaging is:
+
+    (C) 2017, gooroom <gooroom@gooroom.kr>
+
+and is licensed under the GPL version 3,
+see `/usr/share/common-licenses/GPL-3'.
