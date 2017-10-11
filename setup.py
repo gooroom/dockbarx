@@ -136,6 +136,7 @@ data_files=[
             ("/usr/lib/bonobo/servers", ["GNOME_DockBarXApplet.server"]),
             ("/usr/share/applications/", ["dbx_preference.desktop"]),
             ("/usr/share/applications/", ["DockX.desktop"]),
+            ("/etc/xdg/autostart/", ["zeitgeist-daemon.desktop"]),
          ]
 
 setup(name="Dockbarx",

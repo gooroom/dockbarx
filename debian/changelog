@@ -1,4 +1,4 @@
-dockbarx (0.92-1~gooroom) gooroom-1.0; urgency=medium
+dockbarx (0.92+grm) gooroom-1.0; urgency=medium
  
   * Packaged for use in the Gooroom OS
 
