@@ -1,0 +1,39 @@
+#!/bin/sh
+
+set -e
+
+#set default launchers
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type list --list-type=string --set /apps/dockbarx/launchers "[thunar;/usr/share/applications/Thunar.desktop,gooroom-browser;/usr/share/applications/gooroom-browser.desktop,exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop]"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=bool --set /apps/dockbarx/use_number_shortcuts false
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/windowbutton_shift_and_right_click_action "no action"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=bool --set /apps/dockbarx/media_buttons false
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=bool --set /apps/dockbarx/unity false
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/groupbutton_attention_notification_type "nothing"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/groupbutton_shift_and_right_click_action "no action"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/groupbutton_shift_and_left_click_action "no action"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/groupbutton_middle_click_action "no action"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/groupbutton_scroll_up "no action"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/groupbutton_scroll_down "no action"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/windowbutton_shift_and_left_click_action "no action"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/windowbutton_scroll_up "no action"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/windowbutton_scroll_down "no action"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/windowbutton_middle_click_action "no action"
+
+#set theme
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=string --set /apps/dockbarx/theme "DockXYZ"
+
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=bool --set /apps/dockbarx/quicklist false
