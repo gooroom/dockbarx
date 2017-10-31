@@ -174,6 +174,7 @@ class Group(ListOfWindows):
 
 
         self.button = GroupButton(self)
+        self.button.update_tooltip()
         self.popup = GroupPopup(self)
         self.window_list = WindowList(self)
         self.popup.set_child_(self.window_list)
