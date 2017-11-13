@@ -1,3 +1,20 @@
+dockbarx (0.92+grm1u1) gooroom; urgency=medium
+
+  [ sungho.kang ]
+  * [031193b0] Removed unnecessary dependencies
+  * [1864450d] Removed useless groupbutton menu
+
+  [ cjheo ]
+  * [af4fcd75] Set default value for dockbarx
+  * [27f0220e] Modified dockbarx preference to show tooltip.
+
+  [ hmkim ]
+  * [5a8a07d2] set tooltip when group is created.
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Mon, 13 Nov 2017 19:27:33 +0900
+
 dockbarx (0.92) gooroom; urgency=medium
  
   * Packaged for use in the Gooroom OS
