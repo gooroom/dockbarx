@@ -25,7 +25,7 @@ Description: DockBarX common files
 
 Package: dockbarx-dockx
 Architecture: all
-Depends: ${misc:Depends}, dockbarx-common
+Depends: ${misc:Depends}, dockbarx-common, gconf2
 Conflicts: dockbarx (<< 0.90.2), gnome-dockbar-applet-launchers, gnome-dockbarx-applet (<= 0.21.5-0)
 Replaces: dockbarx (<< 0.90.2), gnome-dockbar-applet-launchers, gnome-dockbarx-applet (<= 0.21.5-0)
 Description: The stand-alone DockBarX dock called DockX
