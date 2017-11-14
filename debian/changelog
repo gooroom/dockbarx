@@ -1,3 +1,12 @@
+dockbarx (0.92+grm1u2) gooroom; urgency=medium
+
+  [ jongkyung.woo ]
+  * [c8d664eb] Added gconf2 package dependency to dockbarx-dockx
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Tue, 14 Nov 2017 18:28:03 +0900
+
 dockbarx (0.92+grm1u1) gooroom; urgency=medium
 
   [ sungho.kang ]
