@@ -3,7 +3,7 @@
 set -e
 
 #set default launchers
-gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type list --list-type=string --set /apps/dockbarx/launchers "[thunar;/usr/share/applications/Thunar.desktop,gooroom-browser;/usr/share/applications/gooroom-browser.desktop]"
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type list --list-type=string --set /apps/dockbarx/launchers "[nautilus;/usr/share/applications/org.gnome.Nautilus.desktop,gooroom-browser;/usr/share/applications/gooroom-browser.desktop]"
 
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.defaults --type=bool --set /apps/dockbarx/use_number_shortcuts false
 
