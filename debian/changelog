@@ -1,3 +1,13 @@
+dockbarx (0.92+grm1u3) gooroom; urgency=medium
+
+  [ jongkyung.woo ]
+  * [52eca5bf] Remove exo-terminal-emulator at postinst
+  * [e17c7e25] Added nautilus.desktop at dockbarx
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Wed, 14 Mar 2018 19:15:56 +0900
+
 dockbarx (0.92+grm1u2) gooroom; urgency=medium
 
   [ jongkyung.woo ]
