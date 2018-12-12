@@ -872,6 +872,7 @@ class DockBar():
             desktop_entry = self.__get_desktop_entry_for_id(app.get_id())
             group.set_desktop_entry(desktop_entry)
         group.update_name()
+        self.update_pinned_apps_list()
 
     def __make_groupbutton(self, identifier=None, desktop_entry=None,
                          pinned=False, index=None, window=None):
