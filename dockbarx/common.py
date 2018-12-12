@@ -988,8 +988,17 @@ class Globals(gobject.GObject):
         return gconf_pinned_apps
 
     def set_pinned_apps_list(self, pinned_apps):
-        GCONF_CLIENT.set_list(GCONF_DIR + "/launchers", gconf.VALUE_STRING,
-                              pinned_apps)
+#        GCONF_CLIENT.set_list(GCONF_DIR + "/launchers", gconf.VALUE_STRING,
+#                              pinned_apps)
+        params = '['
+        for app in pinned_apps:
+            params += '{},'.format(app)
+        if params[-1] == ',':
+            params = params[:-1]
+        params += ']'
+
+        cmd = "gconftool-2 --type list --list-type string --set {}/launchers '{}'".format(GCONF_DIR, params)
+        os.system(cmd)
 
     def set_shown_popup(self, popup):
         if popup is None:
