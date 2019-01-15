@@ -1,3 +1,13 @@
+dockbarx (0.92+grm1u4) gooroom; urgency=medium
+
+  [ cjheo ]
+  * [9014b3ee] Updated set_pinned_app_list function to apply changes immediately
+  * [f8f04bdb] Update group_unpinned function to apply changes immediately
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Tue, 15 Jan 2019 12:22:21 +0900
+
 dockbarx (0.92+grm1u3) gooroom; urgency=medium
 
   [ jongkyung.woo ]
