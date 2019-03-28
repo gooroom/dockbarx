@@ -30,6 +30,7 @@ import gtk
 import weakref
 import locale
 from log import logger
+import subprocess
 
 GCONF_CLIENT = gconf.client_get_default()
 GCONF_DIR = "/apps/dockbarx"
@@ -979,12 +980,19 @@ class Globals(gobject.GObject):
     def get_pinned_apps_from_gconf(self):
         # Get list of pinned_apps
         gconf_pinned_apps = []
-        try:
-            gconf_pinned_apps = GCONF_CLIENT.get_list(GCONF_DIR + "/launchers",
-                                                    gconf.VALUE_STRING)
-        except:
-            GCONF_CLIENT.set_list(GCONF_DIR + "/launchers", gconf.VALUE_STRING,
-                                  gconf_pinned_apps)
+
+        output = subprocess.Popen(["gconftool-2", "--get", "{}/launchers".format(GCONF_DIR)],
+                                                        stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+
+        (r, o) = output.communicate()
+        if r is None:
+            return gconf_pinned_apps
+
+        args = ['[', ']']
+        for a in args:
+            r = r.replace(a, "")
+
+        gconf_pinned_apps = r.strip().split(",")
         return gconf_pinned_apps
 
     def set_pinned_apps_list(self, pinned_apps):
