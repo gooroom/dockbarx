@@ -1,3 +1,12 @@
+dockbarx (0.92+grm1u5) gooroom; urgency=medium
+
+  [ HaeRyong Jeong ]
+  * [a3ae328e] Update get_pinned_apps_from_gconf function to change immediately
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 29 Mar 2019 10:01:11 +0900
+
 dockbarx (0.92+grm1u4) gooroom; urgency=medium
 
   [ cjheo ]
