@@ -1,3 +1,12 @@
+dockbarx (0.92+grm1u6) gooroom; urgency=medium
+
+  [ HaeRyong Jeong ]
+  * [6bb9ba1c] Modified copyright
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 06 Dec 2019 11:15:18 +0900
+
 dockbarx (0.92+grm1u5) gooroom; urgency=medium
 
   [ HaeRyong Jeong ]
